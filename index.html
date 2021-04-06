@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thời khóa biểu nè</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.6.0.js"></script>
+    <script>
+        $("document").ready(function(){
+            $("#addReminder").click(function(){
+                var reminder = $("#reminder").val();
+                console.log(reminder);
+                $("#schedule").replaceWith("<li id='schedule' class='list-group-item'>"+ reminder +"</li>");
+            })
+            $("#addSchedule").click(function(){
+                $("<li id='schedule' class='list-group-item'>Blank</li>").insertBefore("#endContent")
+            })
+        })
+    </script>
+</head>
+<body>
+<div class="container shadow-lg mb-3">
+    <h2 class="text-center">Thời khóa biểu</h2>
+    <h5 class="text-center">~Up to date~</h5>
+    <div class="row">
+        <div class="col-1 border-light border rounded mr-1">Tiết</div>
+        <div class="col border border-light rounded mr-1 py-2 ">Thu 2</div>
+        <div class="col border border-light rounded mr-1 py-2">Thu 3</div>
+        <div class="col border border-light rounded mr-1 py-2">Thu 4</div>
+        <div class="col border border-light rounded mr-1 py-2">Thu 5</div>
+        <div class="col border border-light rounded mr-1 py-2">Thu 6</div>
+        <div class="col border border-light rounded py-2">Thu 7</div>
+    </div>
+    <div class="row">
+        <div class="col-1 border-light border rounded mr-1">1</div>
+        <div class="flip-box col border border-light bg-secondary text-light rounded mr-md-1 py-3 text-center">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    Chào cờ
+                </div>
+                <div class="flip-back">
+                    Some back text
+                </div>
+            </div>
+        </div>
+        <div class="col border border-light bg-secondary text-light rounded mr-md-1 py-3 text-center">Toán</div>
+        <div class="col border border-light bg-secondary text-light rounded mr-md-1 py-3 text-center">Toán</div>
+        <div class="col border border-light bg-secondary text-light rounded mr-md-1 py-3 text-center">Lịch sử</div>
+        <div class="col border border-light bg-secondary text-light rounded mr-md-1 py-3 text-center">Vật lý</div>
+        <div class="col border border-light bg-secondary text-light rounded py-3 text-center">Vật lý</div>
+    </div>
+    <div class="row">
+        <div class="col-1 border-light border rounded mr-1">2</div>
+        <div class="col border border-light bg-secondary text-light rounded mr-1 py-3 text-center">Toán</div>
+        <div class="col border border-light bg-secondary text-light rounded mr-1 py-3 text-center">Công nghệ</div>
+        <div class="col border border-light bg-secondary text-light rounded mr-1 py-3 text-center">Ngữ văn</div>
+        <div class="col border border-light bg-secondary text-light rounded mr-1 py-3 text-center">Hóa học</div>
+        <div class="col border border-light bg-secondary text-light rounded mr-1 py-3 text-center">Sinh học</div>
+        <div class="col border border-light bg-secondary text-light rounded  py-3 text-center">Địa lý</div>
+    </div>
+    <div class="row">
+        <div class="col-1 border-light border rounded mr-1">3</div>
+        <div class="col border border-light bg-secondary text-light rounded mr-1 py-3 text-center">Tin học</div>
+        <div class="col border border-light bg-secondary text-light rounded mr-1 py-3 text-center">Thể dục</div>
+        <div class="col border border-light bg-secondary text-light rounded mr-1 py-3 text-center">Ngữ Văn</div>
+        <div class="col border border-light bg-secondary text-light rounded mr-1 py-3 text-center">GDCD</div>
+        <div class="col border border-light bg-secondary text-light rounded mr-1 py-3 text-center">Thể dục</div>
+        <div class="col border border-light bg-secondary text-light rounded py-3 text-center">Toán</div>
+    </div>
+    <div class="row">
+        <div class="col-1 border-light border rounded mr-1">4</div>
+        <div class="col border border-light bg-secondary text-light rounded mr-1 py-3 text-center">Ngữ văn</div>
+        <div class="col border border-light bg-secondary text-light rounded mr-1 py-3 text-center">Tiếng Anh</div>
+        <div class="col border border-light bg-secondary text-light rounded mr-1 py-3 text-center">Tiếng Anh</div>
+        <div class="col border border-light bg-secondary text-light rounded mr-1 py-3 text-center">Tin học</div>
+        <div class="col border border-light bg-secondary text-light rounded mr-1 py-3 text-center">Tiếng Anh</div>
+        <div class="col border border-light bg-secondary text-light rounded py-3 text-center">Hóa học</div>
+    </div>
+    <div class="row">
+        <div class="col-1 border-light border rounded mr-1">5</div>
+        <div class="col border border-light bg-secondary text-light rounded mr-1 py-3 text-center"></div>
+        <div class="col border border-light bg-secondary text-light rounded mr-1 py-3 text-center">Địa lý</div>
+        <div class="col border border-light bg-secondary text-light rounded mr-1 py-3 text-center"></div>
+        <div class="col border border-light bg-secondary text-light rounded mr-1 py-3 text-center"></div>
+        <div class="col border border-light bg-secondary text-light rounded mr-1 py-3 text-center"></div>
+        <div class="col border border-light bg-secondary text-light rounded py-3 text-center">Sinh hoạt lớp</div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col mr-1 py-3 border border-light rounded text-center">Hoa</div>
+        <div class="col mr-1 py-3 border border-light rounded text-center">Hoa</div>
+        <div class="col mr-1 py-3 border border-light rounded text-center">Hoa</div>
+        <div class="col mr-1 py-3 border border-light rounded text-center">Hoa</div>
+        <div class="col mr-1 py-3 border border-light rounded text-center">Hoa</div>
+        <div class="col mr-1 py-3 border border-light rounded text-center">Hoa</div>
+    </div>
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col mr-1 py-3 border border-light rounded text-center">Hoa</div>
+        <div class="col mr-1 py-3 border border-light rounded text-center">Hoa</div>
+        <div class="col mr-1 py-3 border border-light rounded text-center">Hoa</div>
+        <div class="col mr-1 py-3 border border-light rounded text-center">Hoa</div>
+        <div class="col mr-1 py-3 border border-light rounded text-center">Hoa</div>
+        <div class="col mr-1 py-3 border border-light rounded text-center">Hoa</div>
+    </div>
+    <br>
+    
+    <div>
+    <h3>Lịch:</h3>
+    <div class="input-group input-group my-3">
+        <input type="text" class="form-control" id="reminder">
+        <div class="input-group-append">
+            <button class="btn btn-success" id="addReminder">Thêm lời nhắc nhở</button>
+        </div>
+        <!--
+        <div class="input-group-append">
+            <button class="btn btn-success" id="addSchedule">Thêm lịch</button>
+        </div>
+        -->
+    </div>
+    <hr>
+    <ul class="list-group">
+        <li id="schedule" class="list-group-item">
+            Blank
+        </li>
+        <div id="endContent" class="mb-2"></div>
+    </ul>
+    </div>
+</div>
+
+</body>
+</html>
