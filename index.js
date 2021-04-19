@@ -12,9 +12,9 @@ $("document").ready(function () {
   $("#Wed4").text("Lý");
   //Thursday - Thu 5
   $("#Thur1").text("Anh");
-  $("#Thur1").text("Anh");
-  $("#Thur1").text("Toán");
-  $("#Thur1").text("Toán");
+  $("#Thur2").text("Anh");
+  $("#Thur3").text("Toán");
+  $("#Thur4").text("Toán");
   //Friday - Thu 6
   $("#Fri1").text("Sinh");
   $("#Fri2").text("Sinh");
