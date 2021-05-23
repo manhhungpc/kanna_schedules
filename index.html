@@ -5,6 +5,7 @@
     <title>Thời khóa biểu nè</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/27f90f1b58.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/jquery-3.6.0.js"></script>
@@ -20,12 +21,27 @@
                 $("<li id='schedule' class='list-group-item'>Blank</li>").insertBefore("#endContent")
             })
         })
+        var currDate = new Date();
+        var startDate = new Date("8/10/2020");
+        var loveTime = currDate.getTime()-startDate.getTime();
+        var loveDate = loveTime/(1000*3600*24);
+        console.log(Math.floor(loveDate));
+        $(".loveClick").click(()=>{
+            
+        })
+        setInterval(()=>{
+            $(".loveCount").html(`Số ngày chúng mình yêu nhau: ${Math.floor(loveDate)} <i class="fas fa-heart" style="color: red"></i>`).css("display", "block")
+        }, 1000)
     </script>
 </head>
 <body>
 <div class="container shadow-lg mb-3">
     <h2 class="text-center">Thời khóa biểu</h2>
-    <h5 class="text-center">~Up to date~</h5>
+    <h6 class="text-center love-info">
+        <!--<button class="btn loveClick" style="background-color: #FF4041;">Nhấn vào đây ik :></button>-->
+        <p>Cố lên nha • .<</p>
+        <div class="loveCount" style="display: none;"></div>
+    </h6>
     <div class="row">
         <div class="col-1 border-light border rounded mr-1">Tiết</div>
         <div class="col border border-light rounded mr-1 py-2 ">Thu 2</div>
